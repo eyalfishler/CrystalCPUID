@@ -1,0 +1,1444 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ﾆｭｰﾄﾗﾙ (標準) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,15,2,0
+ PRODUCTVERSION 4,15,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040004b0"
+        BEGIN
+            VALUE "Comments", "http://crystalmark.info/\0"
+            VALUE "CompanyName", "Crystal Dew World\0"
+            VALUE "FileDescription", "CrystalCPUID\0"
+            VALUE "FileVersion", "4, 15, 2, 0\0"
+            VALUE "InternalName", "CrystalCPUID\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002-2008 hiyohiyo\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CrystalCPUID.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CrystalCPUID\0"
+            VALUE "ProductVersion", "4, 15, 2, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x400, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      MOVEABLE PURE   "manifest.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "C",            IDM_COPY_TEXT,          VIRTKEY, CONTROL, NOINVERT
+    "D",            IDM_HIDE_DATE,          VIRTKEY, CONTROL, NOINVERT
+    "H",            IDM_HIDE_ORIGINAL_CLOCK, VIRTKEY, CONTROL, NOINVERT
+    "K",            IDM_LOVE_HAMMER,        VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_PREVIEW_TEXT,       VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_QUICK_SAVE_IMAGE,   VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_REAL_TIME_CLOCK,    VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SAVE_TEXT,          VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          IDM_ENABLE_CRYSTAL_N_QUIET, VIRTKEY, NOINVERT
+    VK_F4,          IDM_REAL_TIME_CLOCK,    VIRTKEY, NOINVERT
+    VK_F5,          IDM_REFRESH,            VIRTKEY, NOINVERT
+    VK_F6,          IDM_REFRESH_WT,         VIRTKEY, NOINVERT
+    VK_F7,          IDM_REFRESH_MMT,        VIRTKEY, NOINVERT
+    VK_F8,          IDM_REFRESH_QPC,        VIRTKEY, NOINVERT
+    VK_F9,          IDM_REFRESH_NOLOAD,     VIRTKEY, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CrystalCPUID.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""afxres.rc""         // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_TASKTRAY            ICON    DISCARDABLE     "res\\normal.ico"
+IDR_TASKTRAY_MAX        ICON    DISCARDABLE     "res\\max.ico"
+IDR_TASKTRAY_MID        ICON    DISCARDABLE     "res\\mid.ico"
+IDR_TASKTRAY_MIN        ICON    DISCARDABLE     "res\\min.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Customize",                  IDM_CUSTOMIZE
+        MENUITEM "&Multiplier Management Setting", IDM_CRYSTAL_N_QUIET
+        MENUITEM SEPARATOR
+        MENUITEM "Save &Text\tCtrl + S",        IDM_SAVE_TEXT
+        MENUITEM "Save &Image",                 IDM_SAVE_IMAGE
+        MENUITEM "&Exit\tALT + F4",             IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Refresh [ QPC + MMT ]\tF5",  IDM_REFRESH
+        MENUITEM "&Copy\tCtrl + C",             IDM_COPY_TEXT
+        MENUITEM "&Preview\tCtrl + P",          IDM_PREVIEW_TEXT
+        MENUITEM "Quick Save &Image\tCtrl + Q", IDM_QUICK_SAVE_IMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Refresh [ &WT ] \tF6",        IDM_REFRESH_WT
+        MENUITEM "Refresh [ &MMT ] \tF7",       IDM_REFRESH_MMT
+        MENUITEM "Refresh [ &QPC ] \tF8",       IDM_REFRESH_QPC
+        MENUITEM "Refresh [ QPC (&No Load) ] \tF9", IDM_REFRESH_NOLOAD
+    END
+    POPUP "F&unction"
+    BEGIN
+        MENUITEM "&Feature Flags",              IDM_FEATURE_FLAGS
+        MENUITEM "&CPUID Information",          IDM_CPUID_DETAIL
+        MENUITEM "C&ache Information",          IDM_CACHE_INFO
+        MENUITEM "&BIOS Information by WMI",    IDM_BIOS_INFO
+        MENUITEM "&System Information by DMI",  IDM_DMI_INFO, GRAYED
+        MENUITEM "&Chipset Information",        IDM_CHIPSET_INFO, GRAYED
+        MENUITEM "&PCI Device Information",     32819, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Multiplier Management\tF3",  IDM_ENABLE_CRYSTAL_N_QUIET
+        , GRAYED
+        MENUITEM "&Real Time Clock\tF4",        IDM_REAL_TIME_CLOCK, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Intel Enhanced SpeedStep Control", IDM_SPEED_STEP, GRAYED
+        MENUITEM "AMD &K6/K7/K8/LX Multiplier\tCtrl + K", IDM_LOVE_HAMMER
+        , GRAYED
+        MENUITEM "&VIA CyrixIII/C3 Multiplier", IDM_LONG_HAUL, GRAYED
+        MENUITEM "&Transmeta Information",      IDM_TRANSMETA_INFO, GRAYED
+        MENUITEM "Intel Processor Serial &Number", IDM_PROCESSOR_SERIAL
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "MSR &Editor",                 IDM_MSR_EDIT, GRAYED
+        MENUITEM "MSR &Walker",                 IDM_MSR_WALKER, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide Original Clock && Multiplier ", 
+                                                IDM_HIDE_ORIGINAL_CLOCK
+        MENUITEM "Hide &Date && Time",          IDM_HIDE_DATE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      IDM_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&ReadMe",                     IDM_READ_ME
+        MENUITEM "CrystalCPUID Version",        IDM_CRYSTAL_CPUID_TEXT
+        MENUITEM "CrystalCPUID History",        IDM_CRYSTAL_CPUID_HISTORY_TEXT
+
+        MENUITEM "&SysInfo Version",            IDM_CPU_INFO_TEXT
+        MENUITEM "SysInfo History",             IDM_CPU_INFO_HISTORY_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "CrystalCPUID.&ini",           IDM_CRYSTAL_CPUID_INI
+        MENUITEM SEPARATOR
+        MENUITEM "&Crystal Dew World (Web)",    IDM_CRYSTAL_DEW_WORLD
+    END
+    POPUP "&Language"
+    BEGIN
+        MENUITEM "&Japanese",                   IDM_JAPANESE
+        MENUITEM "&English",                    IDM_ENGLISH
+    END
+END
+
+IDR_PCI_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Save \tCtrl + S",            IDM_SAVE_TEXT
+        MENUITEM "&Close\tAlt + F4",            IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy \tCtrl + C",            IDM_COPY
+    END
+END
+
+#endif    // ﾆｭｰﾄﾗﾙ (標準) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MATRIXLARGE         BITMAP  MOVEABLE PURE   "res\\matrixsetblue.bmp"
+IDB_MATRIXSMALL         BITMAP  MOVEABLE PURE   "res\\matrixsetsmallblue.bmp"
+IDB_MATRIXTINY          BITMAP  MOVEABLE PURE   "res\\matrixsettinyblue.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LH_K8_VOLTAGE       "------------------------\n  K8 Voltage\n------------------------\nCore Voltage =\nBase Voltage (0.800V - 1.550V)\n+ RVO1 (0.000V - 0.175V)\n+ RVO2 (0.000V - 0.075V)\n=> 0.800V - 1.800V\n - RVO = Ramp Voltage Offset\n - RVO1/2 remains as it is.\r\n\n"
+    IDS_LH_COMMAND_LINE_JP  "------------------------\n  コマンドラインオプション\n------------------------\n■一般\n/Q   = 起動時に PNG 形式で画像を保存します。(temp.png)\n/S   = 起動時に TEXT 形式で保存します。(temp.txt)\n/Pxx = 情報を取得する CPU を選択します。(xx は CPU 番号 1-32)\n/R   = 起動時に Real Time Clock ダイアログも表示します。\n/E   = /Q, /S, /F, /V, /P を処理した後そのまま終了します。\n\n■K6/K7/K8/CyrixIII/C3/Pentium M 専用\n/Fxx = 倍率変更 (xx は FID, 0-15/31)\n■K7/K8/Pentium M 専用\n/Vxx = 電圧変更 (xx は VID, 0-15/31)"
+    IDS_LH_COMMAND_LINE_EN  "------------------------\n  Command line Option\n------------------------\nfor general\n /Q   = Save as PNG image. (temp.png)\n /S   = Save as Text. (temp.txt)\n /Pxx = Select Processor (xx = 1-32)\n /R   = Launch Real Time Clock Dialog.\n /E   = Exit\n\nfor K6/K7/K8/CyrixIII/C3/Pentium M\n /Fxx = Change Multiplier (xx = FID, 0-15/31)\nfor K7/K8/Pentium M\n /Vxx = Change Voltage (xx = VID, 0-15/63)\n"
+    IDS_REAL_TIME_CLOCK_NO_LOAD_JP 
+                            "クロック周波数の測定が正常に行えないようです。\nファイル > カスタマイズ > Real Time Clock の設定を [With Load + QPC]\nに変更してください。\n"
+    IDS_REAL_TIME_CLOCK_NO_LOAD_EN 
+                            "It cannot measure clock correctly, please change setting.\nFile > Customize > Real Time Clock\nPlease select [With Load + QPC].\n"
+    IDS_REAL_TIME_CLOCK_HELP_JP 
+                            "Multiplier Mangement を利用する場合やクロックを正確に測定できない場合は With Load ( QPC ) を選択してください。\n若干負荷は増えますが、クロックが正確に測定できるようになるはずです。\n"
+    IDS_REAL_TIME_CLOCK_HELP_EN 
+                            "When you use Multiplier Management or it cannot measure clock correctly, please select With Load ( QPC ).\nAlthough load increases a little, clock can measure correctly.\n"
+    IDS_NOT_FOUND_SYS_INFO_DLL_JP 
+                            "SysInfo.dll がみつかりません。\n同じディレクトリに SysInfo.dll が存在するか確認してください。"
+    IDS_NOT_FOUND_SYS_INFO_DLL_EN "Not found SysInfo.dll."
+    IDS_STOP_CRYSTAL_N_QUIET_JP 
+                            "Multiplier Management を停止してから実行してください。"
+    IDS_STOP_CRYSTAL_N_QUIET_EN "Please stop Multiplier Management."
+    IDS_SET_NEW_FID_JP      "新しい倍率を変更しますか？"
+    IDS_SET_NEW_FID_EN      "Set New Muliplier?"
+    IDS_SET_NEW_VID_JP      "新しい電圧に変更しますか？"
+    IDS_SET_NEW_VID_EN      "Set New Voltage?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAN_NOT_CREATE_SHORTCUT_JP "ショートカットの作成に失敗しました。"
+    IDS_CAN_NOT_CREATE_SHORTCUT_EN "Create Shortcut Failure!!"
+    IDS_CREATE_SHORTCUT_JP  "ショートカットの作成に成功しました。"
+    IDS_CREATE_SHORTCUT_EN  "Create Shortcut!!"
+    IDS_POP_SHOW_MAIN_DIALOG_JP "メインダイアログを表示する"
+    IDS_POP_SHOW_MAIN_DIALOG_EN "Show Main Dialog"
+    IDS_POP_HIDE_MAIN_DIALOG_JP "メインダイアログを隠す"
+    IDS_POP_HIDE_MAIN_DIALOG_EN "Hide Main Dialog"
+    IDS_POP_EXIT_JP         "終了"
+    IDS_POP_EXIT_EN         "Exit"
+    IDS_POP_ENABLE_CRYSTAL_N_QUIET_JP "Multiplier Management"
+    IDS_POP_ENABLE_CRYSTAL_N_QUIET_EN "Multiplier Management"
+    IDS_POP_DISABLE_CRYSTAL_N_QUIET_JP "Multiplier Management"
+    IDS_POP_DISABLE_CRYSTAL_N_QUIET_EN "Multiplier Management"
+    IDS_POP_SETTING_CRYSTAL_N_QUIET_JP "Multiplier Management 設定"
+    IDS_POP_SETTING_CRYSTAL_N_QUIET_EN "Multiplier Management Setting"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (ｱﾒﾘｶ) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PCI_INFO DIALOG DISCARDABLE  0, 0, 367, 240
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PCI Device Information"
+MENU IDR_PCI_MENU
+FONT 9, "MS UI Gothic"
+BEGIN
+    CONTROL         "List2",IDC_PCI_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,353,144
+    GROUPBOX        "PCI Device Detail Information",IDC_STATIC,7,155,353,78
+    RTEXT           "Bus",IDC_STATIC,12,171,21,8,SS_CENTERIMAGE
+    RTEXT           "Device",IDC_STATIC,58,171,29,8,SS_CENTERIMAGE
+    RTEXT           "Function",IDC_STATIC,112,171,29,8,SS_CENTERIMAGE
+    RTEXT           "Vendor ID",IDC_STATIC,168,171,35,8,SS_CENTERIMAGE
+    RTEXT           "Device ID",IDC_STATIC,237,171,33,8,SS_CENTERIMAGE
+    RTEXT           "Revision",IDC_STATIC,301,171,31,8,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_PCI_BUS,35,169,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_PCI_DEVICE,89,169,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_PCI_FUNCTION,143,169,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_PCI_VENDOR_ID,205,169,28,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_PCI__DEVICE_ID,273,169,28,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_PCI__REVISION,334,169,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Vendor Name",IDC_STATIC,11,183,49,8,SS_CENTERIMAGE
+    RTEXT           "Device Name",IDC_STATIC,11,195,49,8,SS_CENTERIMAGE
+    RTEXT           "Sub System ID",IDC_STATIC,11,219,49,8,SS_CENTERIMAGE
+    RTEXT           "Class ID",IDC_STATIC,11,207,49,8,SS_CENTERIMAGE
+    RTEXT           "Device Type",IDC_STATIC,131,207,68,8,SS_CENTERIMAGE
+    RTEXT           "Sub System Vendor",IDC_STATIC,131,219,68,8,
+                    SS_CENTERIMAGE
+    LTEXT           "Static",IDC_PCI_VENDOR_NAME,62,181,292,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Static",IDC_PCI__DEVICE_NAME,62,193,292,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Static",IDC_PCI__CLASS_ID,62,205,65,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Static",IDC_PCI_CLASS_NAME,201,205,153,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Static",IDC_PCI_SUB_SYSTEM_ID,62,217,65,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Static",IDC_PCI_SUB_SYSTEM_NAME,201,217,153,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_CUSTOMIZE DIALOG DISCARDABLE  0, 0, 219, 341
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Customize"
+FONT 9, "MS UI Gothic"
+BEGIN
+    PUSHBUTTON      "Select Font (Main)",IDC_SELECT_FONT_MAIN,10,15,70,14
+    PUSHBUTTON      "Select Font (Other)",IDC_SELECT_FONT_OTHER,10,29,70,14
+    PUSHBUTTON      "Select File",IDC_SELECT_FILE,158,69,52,14
+    PUSHBUTTON      "Select Color",IDC_SELECT_COLOR,158,84,52,14
+    PUSHBUTTON      "Clear",IDC_CLEAR,10,107,52,14
+    PUSHBUTTON      "Select Color",IDC_SELECT_LCD_ON,158,143,52,14
+    PUSHBUTTON      "Select Color",IDC_SELECT_LCD_OFF,158,157,52,14
+    PUSHBUTTON      "Select Color",IDC_SELECT_LCD_GRID,158,171,52,14
+    CONTROL         "New Type [Alpha]",IDC_RTC_NEW_TYPE,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED,150,
+                    232,48,12
+    CONTROL         "With Load ( QPC ) for Change Multiplier.",
+                    IDC_RTC_WITH_LOAD,"Button",BS_AUTORADIOBUTTON,11,234,187,
+                    12
+    CONTROL         "No Load ( QPC + MMT ) for Change System Clock.",
+                    IDC_RTC_NO_LOAD,"Button",BS_AUTORADIOBUTTON,11,246,194,
+                    12
+    CONTROL         "No Load ( QPC )",IDC_RTC_NO_LOAD_QPC,"Button",
+                    BS_AUTORADIOBUTTON,11,258,78,12
+    CONTROL         "No Load ( MMT )",IDC_RTC_NO_LOAD_MMT,"Button",
+                    BS_AUTORADIOBUTTON,89,258,72,12
+    PUSHBUTTON      "?",IDC_RTC_HELP,200,234,12,12,NOT WS_VISIBLE
+    COMBOBOX        IDC_INTERVAL_TIME,65,272,36,131,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Top Most",IDC_RTC_TOPMOST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,258,45,12
+    CONTROL         "Gray",IDC_GRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,
+                    95,49,10
+    CTEXT           "Static",IDC_WINDOW_SIZE,131,111,77,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Window Size",IDC_STATIC,82,113,47,8
+    RTEXT           "Image Size",IDC_STATIC,82,101,47,8
+    CTEXT           "Static",IDC_IMAGE_SIZE,131,99,77,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_TEXT_COLOR,81,84,77,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Text",IDC_STATIC,52,84,26,14,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_FILE_NAME,12,69,146,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    GROUPBOX        "Background",IDC_STATIC,5,59,209,67
+    RTEXT           "Interval Time",IDC_STATIC,9,274,52,8
+    GROUPBOX        "Real Time Clock",IDC_STATIC,5,225,209,62
+    LTEXT           "ms",IDC_STATIC,103,274,11,8
+    GROUPBOX        "Dialog Font (*auto restart)",IDC_STATIC,5,5,209,52
+    LTEXT           "Font Information",IDC_FONT_INFO_MAIN,81,15,126,14,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "[B] Bold [I] Italic ( Main Dialog Only!! )",IDC_STATIC,
+                    10,45,202,8
+    LTEXT           "Font Information",IDC_FONT_INFO_OTHER,81,29,126,14,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "LCD ( Real Time Clock / About )",IDC_STATIC,5,131,209,
+                    93
+    CTEXT           "Static",IDC_LCD_ON,81,143,77,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "ON",IDC_STATIC,53,143,26,14,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_LCD_OFF,81,157,77,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "OFF",IDC_STATIC,53,157,26,14,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_LCD_GRID,81,171,77,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Grid",IDC_STATIC,53,171,26,14,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_LCD_SAMPLE,11,143,34,35,WS_BORDER
+    GROUPBOX        "Quick Select",IDC_STATIC,8,188,177,34
+    LTEXT           "1",IDC_LCD_SAMPLE_1,12,199,12,19,SS_NOTIFY | WS_BORDER
+    LTEXT           "2",IDC_LCD_SAMPLE_2,29,199,12,19,SS_NOTIFY | WS_BORDER
+    LTEXT           "3",IDC_LCD_SAMPLE_3,46,199,12,19,SS_NOTIFY | WS_BORDER
+    LTEXT           "4",IDC_LCD_SAMPLE_4,63,199,12,19,SS_NOTIFY | WS_BORDER
+    LTEXT           "5",IDC_LCD_SAMPLE_5,80,199,12,19,SS_NOTIFY | WS_BORDER
+    LTEXT           "6",IDC_LCD_SAMPLE_6,97,199,12,19,SS_NOTIFY | WS_BORDER
+    LTEXT           "7",IDC_LCD_SAMPLE_7,114,199,12,19,SS_NOTIFY | WS_BORDER
+    LTEXT           "8",IDC_LCD_SAMPLE_8,131,199,12,19,SS_NOTIFY | WS_BORDER
+    LTEXT           "9",IDC_LCD_SAMPLE_9,148,199,12,19,SS_NOTIFY | WS_BORDER
+    LTEXT           "10",IDC_LCD_SAMPLE_10,165,199,12,19,SS_NOTIFY | 
+                    WS_BORDER
+    LTEXT           "11",IDC_LCD_SAMPLE_11,192,199,12,19,SS_NOTIFY | 
+                    WS_BORDER
+    GROUPBOX        "User",IDC_STATIC,187,188,24,34
+    COMBOBOX        IDC_RTC_DIALOG_FONT,173,272,36,131,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Font Size",IDC_STATIC,120,274,45,8
+    GROUPBOX        "Task Tray Icon",IDC_STATIC,5,289,209,47
+    ICON            "",IDC_TTI_MAX_ICON,67,300,20,20
+    PUSHBUTTON      "MAX",IDC_TTI_MAX,85,300,24,16
+    ICON            "",IDC_TTI_NORMAL_ICON,9,300,20,20
+    PUSHBUTTON      "NORMAL",IDC_TTI_NORMAL,28,300,36,16
+    ICON            "",IDC_TTI_MID_ICON,113,300,20,20
+    PUSHBUTTON      "MIDDLE",IDC_TTI_MID,131,300,32,16
+    ICON            "",IDC_TTI_MIN_ICON,168,300,20,20
+    PUSHBUTTON      "MIN",IDC_TTI_MIN,186,300,24,16
+    PUSHBUTTON      "default",IDC_TTI_DEFAULT,28,317,36,16
+    CONTROL         "Disable Task Tray Icon",IDC_TTI_DISABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,68,323,88,12
+END
+
+IDD_CPUID_DIALOG DIALOG DISCARDABLE  0, 0, 274, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CPUID Information"
+FONT 9, "MS UI Gothic"
+BEGIN
+    CONTROL         "List1",IDC_CPUID_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,260,164
+END
+
+IDD_FEATURE_DIALOG DIALOG DISCARDABLE  0, 0, 367, 236
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Feature Flags"
+FONT 9, "MS UI Gothic"
+BEGIN
+    PUSHBUTTON      "Standard/EDX",IDC_FEATURE_FLAG_STANDARD,7,7,52,16
+    PUSHBUTTON      "Standard/ECX",IDC_FEATURE_FLAG_STANDARD_ECX,60,7,52,16
+    PUSHBUTTON      "Extended/EDX",IDC_FEATURE_FLAG_EX,113,7,52,16
+    PUSHBUTTON      "VIA",IDC_FEATURE_FLAG_VIA,219,7,22,16
+    PUSHBUTTON      "Transmeta",IDC_FEATURE_FLAG_TRANSMETA,242,7,41,16
+    RTEXT           "Edit",IDC_FEATURE_NAME_1,9,44,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_2,9,56,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_3,9,68,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_4,9,80,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_5,9,92,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_6,9,104,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_7,9,116,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_8,9,128,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_9,9,140,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_10,9,152,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_11,9,164,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_12,9,176,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_13,9,188,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_14,9,200,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_15,9,212,111,12,SS_CENTERIMAGE
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_1,122,44,36,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_2,122,56,36,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_3,122,68,36,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_4,122,80,36,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_5,122,92,36,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_6,122,104,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_7,122,116,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_8,122,128,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_9,122,140,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_10,122,152,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_11,122,164,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_12,122,176,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_13,122,188,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_14,122,200,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_15,122,212,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_1,158,44,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_2,158,56,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_3,158,68,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_4,158,80,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_5,158,92,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_6,158,104,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_7,158,116,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_8,158,128,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_9,158,140,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_10,158,152,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_11,158,164,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_12,158,176,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_13,158,188,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_14,158,200,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_15,158,212,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Edit",IDC_FEATURE_NAME_17,187,44,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_18,187,56,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_19,187,68,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_20,187,80,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_21,187,92,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_22,187,104,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_23,187,116,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_24,187,128,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_25,187,140,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_26,187,152,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_27,187,164,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_28,187,176,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_29,187,188,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_30,187,200,111,12,SS_CENTERIMAGE
+    RTEXT           "Edit",IDC_FEATURE_NAME_31,187,212,111,12,SS_CENTERIMAGE
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_17,300,44,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_18,300,56,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_19,300,68,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_20,300,80,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_21,300,92,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_22,300,104,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_23,300,116,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_24,300,128,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_25,300,140,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_26,300,152,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_27,300,164,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_28,300,176,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_29,300,188,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_30,300,200,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_31,300,212,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_17,336,44,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_18,336,56,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_19,336,68,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_20,336,80,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_21,336,92,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_22,336,104,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_23,336,116,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_24,336,128,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_25,336,140,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_26,336,152,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_27,336,164,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_28,336,176,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_29,336,188,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_30,336,200,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_31,336,212,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Edit",IDC_FEATURE_NAME_0,9,32,111,12,SS_CENTERIMAGE
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_0,122,32,36,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_0,158,32,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Edit",IDC_FEATURE_NAME_16,187,32,111,12,SS_CENTERIMAGE
+    CTEXT           "Edit",IDC_FEATURE_INITIAL_16,300,32,36,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Edit",IDC_FEATURE_SUPPORT_16,336,32,20,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "",IDC_STATIC,7,23,352,205
+    PUSHBUTTON      "Extended/ECX",IDC_FEATURE_FLAG_EX_ECX,166,7,52,16
+    PUSHBUTTON      "PowerManagement",IDC_FEATURE_FLAG_POWER_MANAGEMENT,284,
+                    7,74,16
+END
+
+IDD_LOVE_HAMMER DIALOG DISCARDABLE  0, 0, 131, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AMD K6/K7/K8/LX Multiplier"
+FONT 9, "MS UI Gothic"
+BEGIN
+    DEFPUSHBUTTON   "Create Shortcut on Desktop",IDC_LH_CREATE_LINK,23,134,
+                    101,14
+    COMBOBOX        IDC_LH_SET_FID,70,7,48,281,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Current",IDC_STATIC,13,24,34,8
+    LTEXT           "Startup",IDC_STATIC,48,24,34,8
+    LTEXT           "Max",IDC_STATIC,82,24,34,8
+    RTEXT           "Static",IDC_LH_CURRENT_FID,13,34,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_LH_STARTUP_FID,48,34,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_LH_MAX_FID,83,34,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "New Multiplier",IDC_STATIC,15,9,51,8
+    LTEXT           "Startup",IDC_STATIC,48,80,34,8
+    LTEXT           "Max",IDC_STATIC,82,80,34,8
+    RTEXT           "Static",IDC_LH_CURRENT_VID,13,90,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_LH_STARTUP_VID,48,90,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_LH_MAX_VID,83,90,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "AT YOUR OWN RISK!!",IDC_STATIC,7,124,117,8
+    LTEXT           "Current",IDC_STATIC,13,80,34,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_LH_SET_VID,70,64,48,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "New Voltage",IDC_STATIC,15,66,51,8
+    GROUPBOX        "",IDC_STATIC,7,57,117,49
+    CONTROL         "Enable Change Voltage",IDC_LH_ENABLE_VOLTAGE,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,49,89,13
+    PUSHBUTTON      "?",IDC_LH_HELP,7,134,14,14
+    CONTROL         "Show Confirmed Dialog",IDC_LH_CONFIRMED_DIALOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,110,92,10
+END
+
+IDD_BIOS_INFO DIALOG DISCARDABLE  0, 0, 215, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BIOS Information by WMI"
+FONT 9, "MS UI Gothic"
+BEGIN
+    RTEXT           "Vendor",IDC_STATIC,9,16,33,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_BIOS_CAPTION,45,28,159,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Caption",IDC_STATIC,9,28,33,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_BIOS_VERSION,45,40,159,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Version",IDC_STATIC,9,40,33,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_BIOS_DATE,45,52,159,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Date",IDC_STATIC,9,52,33,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_MOTHER_MANUFACTURER,45,121,159,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Vendor",IDC_STATIC,9,121,33,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_MOTHER_PRODUCT,45,133,159,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Product",IDC_STATIC,9,133,33,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_MOTHER_VERSION,45,145,159,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Version",IDC_STATIC,9,145,33,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_SYSTEM_MANUFACTURER,45,175,159,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Vendor",IDC_STATIC,9,175,33,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_SYSTEM_MODEL,45,187,159,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Model",IDC_STATIC,9,187,33,12,SS_CENTERIMAGE
+    GROUPBOX        "BIOS",IDC_STATIC,7,7,201,61
+    GROUPBOX        "Motherboard",IDC_STATIC,7,110,201,52
+    GROUPBOX        "Computer System",IDC_STATIC,7,164,201,40
+    LTEXT           "Edit",IDC_BIOS_MANUFACTURER,45,16,159,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "Get WMI 1.5",IDC_GET_WMI,7,205,58,14
+    LTEXT           "<- Windows NT4/98/95 ONLY...",IDC_GET_WMI_MESSAGE,69,
+                    206,139,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_SM_BIOS_CAPTION,45,78,159,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Caption",IDC_STATIC,9,78,33,12,SS_CENTERIMAGE
+    LTEXT           "Edit",IDC_SM_BIOS_VERSION,45,90,159,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Version",IDC_STATIC,9,90,33,12,SS_CENTERIMAGE
+    GROUPBOX        "SM BIOS",IDC_STATIC,7,69,201,38
+END
+
+IDD_TRANSMETA_INFO DIALOG DISCARDABLE  0, 0, 254, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Transmeta Information"
+FONT 9, "MS UI Gothic"
+BEGIN
+    RTEXT           "Clock",IDC_STATIC,41,7,28,12,SS_CENTERIMAGE
+    RTEXT           "Static",IDC_TM_CLOCK,71,7,26,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "MHz",IDC_STATIC,100,7,16,13,SS_CENTERIMAGE
+    RTEXT           "Nominal Clock",IDC_STATIC,16,19,53,12,SS_CENTERIMAGE
+    RTEXT           "Static",IDC_TM_NOMINAL_CLOCK,71,19,26,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "MHz",IDC_STATIC,100,19,16,12,SS_CENTERIMAGE
+    RTEXT           "Name String",IDC_STATIC,13,63,39,12,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_TM_NAME_STRING,55,63,192,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Hardware Version",IDC_STATIC,13,43,56,12,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_TM_HARDWARE_VERSION,71,43,44,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Software Version",IDC_STATIC,13,31,56,12,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_TM_SOFTWARE_VERSION,71,31,44,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Current Voltage",IDC_STATIC,131,7,71,12,SS_CENTERIMAGE
+    RTEXT           "Static",IDC_TM_CURRENT_VOLTAGE,203,7,26,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Current Performance",IDC_STATIC,129,19,72,12,
+                    SS_CENTERIMAGE
+    RTEXT           "Static",IDC_TM_CURRENT_PERFORMANCE,203,19,26,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Current Gate Delay",IDC_STATIC,128,31,73,12,
+                    SS_CENTERIMAGE
+    RTEXT           "Static",IDC_TM_CURRENT_GATE_DELAY,203,31,26,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Refresh",IDC_TM_REFRESH,187,46,57,14
+    LTEXT           "mV",IDC_STATIC,231,7,12,12,SS_CENTERIMAGE
+    LTEXT           "%",IDC_STATIC,231,19,12,12,SS_CENTERIMAGE
+    LTEXT           "fs",IDC_STATIC,231,31,12,12,SS_CENTERIMAGE
+END
+
+IDD_PROCESSOR_SERIAL DIALOG DISCARDABLE  0, 0, 187, 26
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Intel Processor Serial Number"
+FONT 9, "MS UI Gothic"
+BEGIN
+    EDITTEXT        IDC_PROCESSOR_SERIAL,7,7,173,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+END
+
+IDD_REAL_TIME_CLOCK DIALOG DISCARDABLE  0, 0, 151, 38
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "Clock",IDC_RTC_CLOCK,0,0,151,38,SS_NOTIFY
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 228, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CrystalCPUID"
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "Sub",IDC_SUB,0,57,228,111,WS_BORDER
+    LTEXT           "Main",IDC_MAIN,0,0,228,56,WS_BORDER
+END
+
+IDD_LONG_HAUL DIALOG DISCARDABLE  0, 0, 131, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VIA CyrixIII/C3 Multiplier"
+FONT 9, "MS UI Gothic"
+BEGIN
+    COMBOBOX        IDC_LH_SET_FID,75,7,38,281,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Show Confirmed Dialog",IDC_LH_CONFIRMED_DIALOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,24,52,89,10
+    PUSHBUTTON      "?",IDC_LH_HELP,7,77,14,14
+    DEFPUSHBUTTON   "Create Shortcut on Desktop",IDC_LH_CREATE_LINK,23,77,
+                    101,14
+    RTEXT           "New Multiplier",IDC_STATIC,7,9,65,8
+    RTEXT           "Current Multiplier",IDC_STATIC,7,23,65,8
+    CTEXT           "AT YOUR OWN RISK!!",IDC_STATIC,7,66,116,8
+    RTEXT           "Static",IDC_LH_CURRENT_FID,75,21,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "LongHaul",IDC_STATIC,7,35,65,8
+    RTEXT           "Static",IDC_LH_TYPE,75,33,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_CACHE_INFO DIALOG DISCARDABLE  0, 0, 274, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cache Information"
+FONT 9, "MS UI Gothic"
+BEGIN
+    CONTROL         "List1",IDC_CACHE_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,260,52
+END
+
+IDD_CRYSTALCPUID_DIALOG DIALOG DISCARDABLE  0, 0, 274, 240
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CrystalCPUID"
+MENU IDR_MENU
+FONT 9, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_CPU_CPU_SELECT,231,6,38,84,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL
+    CTEXT           "Edit",IDC_CPU_CPU_NAME,56,6,122,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_PROCESS_RULE,178,6,37,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Edit",IDC_CPU_CODE_NAME,56,20,81,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_PLATFORM,178,20,75,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_PLATFORM_ID,253,20,16,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_VENDOR_STRING,56,32,81,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_TYPE,178,32,75,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_TYPE_ID,253,32,16,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_NAME_STRING,56,44,213,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Current",IDC_STATIC,68,109,38,8
+    CTEXT           "Original",IDC_STATIC,106,109,38,8
+    CTEXT           "Edit",IDC_CPU_MICROCODE_ID,56,57,16,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_APIC,95,57,16,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_BRAND_ID,146,57,16,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_HYPER_THREADING,183,57,16,12,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_CORE_NUMBER,253,57,16,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_FAMILY,56,75,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_MODEL,118,75,19,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_STEPPING,178,75,19,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_FAMILY_EX,227,228,16,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_VISIBLE | WS_DISABLED | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_EX_FAMILY,56,87,20,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_EX_MODEL,118,87,19,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_EX_STEPPING,178,87,19,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_MODEL_EX,204,228,16,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_VISIBLE | WS_DISABLED | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_CLOCK,68,119,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_CLOCK_ORI,106,119,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_SYSTEM_CLOCK,68,131,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_SYSTEM_CLOCK_ORI,106,131,38,12,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_SYSTEM_BUS,68,143,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_SYSTEM_BUS_ORI,106,143,38,12,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_MULTIPLIER,68,155,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_MULTIPLIER_ORI,106,155,38,12,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_OVER_CLOCK,68,167,38,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_DATA_RATE,118,167,26,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_MEMORY,217,107,25,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Edit",IDC_CPU_L1_ITU_CACHE,217,119,25,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_L1_D_CACHE,217,131,25,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_L2_CACHE,217,143,25,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Edit",IDC_CPU_L2_CACHE_SPEED,179,155,26,12,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_L2_CACHE_SPEED_MHZ,205,155,37,12,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Edit",IDC_CPU_L3_CACHE,217,167,25,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "Windows",IDC_CPU_OS,8,209,224,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    RTEXT           "Platform",IDC_STATIC,140,22,36,8
+    RTEXT           "CPU Name",IDC_STATIC,7,8,47,8
+    RTEXT           "Name String",IDC_STATIC,7,46,47,8
+    RTEXT           "Internal Clock",IDC_STATIC,10,121,56,8
+    RTEXT           "System Clock",IDC_STATIC,10,133,56,8
+    RTEXT           "System Bus",IDC_CPU_SYSTEM_BUS_HT,10,145,56,8
+    RTEXT           "Multiplier",IDC_STATIC,10,157,56,8
+    LTEXT           "MHz",IDC_STATIC,147,121,18,8
+    LTEXT           "MHz",IDC_STATIC,147,133,18,8
+    LTEXT           "MHz",IDC_STATIC,147,145,18,8
+    RTEXT           "Over Clock",IDC_STATIC,10,169,56,8
+    LTEXT           "%",IDC_STATIC,108,169,8,8
+    RTEXT           "Brand ID",IDC_STATIC,114,59,30,8
+    RTEXT           "Vendor String",IDC_STATIC,2,34,52,8
+    RTEXT           "Family",IDC_STATIC,9,83,43,8
+    RTEXT           "Model",IDC_STATIC,87,83,26,8
+    RTEXT           "Stepping",IDC_STATIC,140,83,35,8
+    RTEXT           "FamilyEx",IDC_STATIC,192,231,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "(Standard)",IDC_STATIC,211,77,42,8
+    LTEXT           "(Extended)",IDC_STATIC,211,89,42,8
+    RTEXT           "L1 I-Cache",IDC_CPU_CACHE_L1_ITU,169,121,46,8
+    RTEXT           "L1 D-Cache",IDC_STATIC,169,133,46,8
+    RTEXT           "L2 Cache",IDC_STATIC,169,145,46,8
+    RTEXT           "L3 Cache",IDC_STATIC,169,169,46,8
+    LTEXT           "MHz",IDC_STATIC,244,157,24,8
+    LTEXT           "KuOps",IDC_CPU_CACHE_L1_ITU_UNIT,244,121,24,8
+    LTEXT           "KB",IDC_STATIC,244,133,24,8
+    LTEXT           "KB",IDC_STATIC,244,145,24,8
+    LTEXT           "KB",IDC_STATIC,244,169,24,8
+    RTEXT           "Physical Core",IDC_STATIC,205,59,46,8
+    RTEXT           "HTT",IDC_STATIC,162,59,19,8
+    CTEXT           "MMX",IDC_CPU_MMX,7,185,19,8,WS_DISABLED
+    CTEXT           "SSE",IDC_CPU_SSE,25,185,17,8,WS_DISABLED
+    CTEXT           "SSE2",IDC_CPU_SSE2,41,185,21,8,WS_DISABLED
+    CTEXT           "3DNow!",IDC_CPU_3DNOW,27,197,31,8,WS_DISABLED
+    CTEXT           "3DNow!+",IDC_CPU_3DNOW_EX,56,197,32,8,WS_DISABLED
+    CTEXT           "MMX+",IDC_CPU_MMX_EX,7,197,24,8,WS_DISABLED
+    CTEXT           "HTT",IDC_CPU_HT,212,185,18,8,WS_DISABLED
+    RTEXT           "Code Name",IDC_STATIC,7,22,47,8
+    RTEXT           "CPU Type",IDC_STATIC,140,34,36,8
+    RTEXT           "APIC",IDC_STATIC,74,59,19,8
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME | SS_SUNKEN,8,71,262,
+                    1
+    CTEXT           "AMD64",IDC_CPU_AMD_64,244,197,26,8,WS_DISABLED
+    CTEXT           "IA-64",IDC_CPU_INTEL_64,178,229,22,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CTEXT           "SSE3",IDC_CPU_SSE3,61,185,22,8,WS_DISABLED
+    LTEXT           "um",IDC_CPU_PROCESS_UNIT,218,8,12,8,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,9,99,157,83
+    GROUPBOX        "",IDC_STATIC,168,99,102,83
+    LTEXT           "MB",IDC_STATIC,244,109,24,8,SS_CENTERIMAGE
+    RTEXT           "Memory",IDC_STATIC,169,109,46,8
+    CTEXT           "SpeedStep",IDC_CPU_SPEED_STEP,174,185,39,8,WS_DISABLED
+    CTEXT           "PowerNow!/C'n'Q",IDC_CPU_POWER_NOW,136,197,61,8,
+                    WS_DISABLED
+    CTEXT           "LongHaul",IDC_CPU_LONG_HAUL,129,229,34,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CTEXT           "LongRun",IDC_CPU_LONG_RUN,142,232,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    RTEXT           "Date",IDC_CPU_CURRENT_DATE,181,224,86,8,SS_NOTIFY | 
+                    SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "Signature",IDC_CPU_SIGNATURE,8,224,147,8,SS_CENTERIMAGE | 
+                    NOT WS_GROUP
+    CTEXT           "Intel 64",IDC_CPU_IA32E,241,185,30,8,WS_DISABLED
+    RTEXT           "ModelEx",IDC_STATIC,169,230,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    RTEXT           "Microcode ID",IDC_STATIC,1,59,53,8
+    CTEXT           "x64",IDC_CPU_ARCHITECTURE,232,209,37,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "NX/XD",IDC_CPU_NX,197,197,25,8,WS_DISABLED
+    CTEXT           "QPC",IDC_CPU_MEASURE_MODE,40,107,26,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "DualCore",IDC_CPU_DUAL_CORE,155,226,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CTEXT           "VT",IDC_CPU_VT,229,185,14,8,WS_DISABLED
+    CTEXT           "SSE4.1",IDC_CPU_SSE41,108,185,22,8,WS_DISABLED
+    CTEXT           "AMD-V",IDC_CPU_AMD_V,220,197,26,8,WS_DISABLED
+    CTEXT           "SSSE3",IDC_CPU_SSSE3,83,185,22,8,WS_DISABLED
+    PUSHBUTTON      "",IDC_DUMMY,0,0,0,0
+    CTEXT           "SSE4.2",IDC_CPU_SSE42,134,185,22,8,WS_DISABLED
+    CTEXT           "AVX",IDC_CPU_AVX,157,185,19,8,WS_DISABLED
+    CTEXT           "SSE4A",IDC_CPU_SSE4A,90,197,22,8,WS_DISABLED
+    CTEXT           "SSE5",IDC_CPU_SSE5,114,197,22,8,WS_DISABLED
+END
+
+IDD_DMI_INFO DIALOG DISCARDABLE  0, 0, 223, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "System Infomation by DMI"
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "Edit",IDC_DMI_VERSION,45,17,49,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Edit",IDC_QUERY_PERFORMANCE,107,17,89,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_BIOS_VENDOR,44,47,171,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_BIOS_VERSION,44,59,171,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_BIOS_RELEASE_DATE,44,71,171,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_BIOS_ROM_SIZE,44,83,171,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_MOTHER_MANUFACTURER,44,113,171,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_MOTHER_PRODUCT,44,125,171,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_MOTHER_VERSION,44,137,171,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_CPU_MANUFACTURER,44,164,171,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_CPU_VERSION,44,176,171,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Edit",IDC_DMI_CPU_SOCKET,44,188,171,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Edit",IDC_DMI_CPU_CURRENT_CLOCK,45,213,33,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Edit",IDC_DMI_CPU_MAX_CLOCK,104,213,33,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Edit",IDC_DMI_CPU_EXTERNAL_CLOCK,163,213,33,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Vendor",IDC_STATIC,9,47,33,12,SS_CENTERIMAGE
+    RTEXT           "Version",IDC_STATIC,9,59,33,12,SS_CENTERIMAGE
+    RTEXT           "Date",IDC_STATIC,9,71,33,12,SS_CENTERIMAGE
+    RTEXT           "ROM Size",IDC_STATIC,9,83,33,12,SS_CENTERIMAGE
+    GROUPBOX        "SM BIOS",IDC_STATIC,7,7,92,27
+    RTEXT           "Version",IDC_STATIC,9,17,33,12,SS_CENTERIMAGE
+    GROUPBOX        "BIOS",IDC_STATIC,7,37,209,62
+    RTEXT           "Vendor",IDC_STATIC,9,164,33,12,SS_CENTERIMAGE
+    RTEXT           "Version",IDC_STATIC,9,176,33,12,SS_CENTERIMAGE
+    RTEXT           "Socket",IDC_STATIC,9,188,33,12,SS_CENTERIMAGE
+    RTEXT           "Clock",IDC_STATIC,9,213,33,12,SS_CENTERIMAGE
+    GROUPBOX        "CPU",IDC_STATIC,7,155,209,73
+    CTEXT           "Current",IDC_STATIC,45,203,33,8,SS_CENTERIMAGE
+    CTEXT           "Max",IDC_STATIC,104,203,33,8,SS_CENTERIMAGE
+    CTEXT           "External",IDC_STATIC,163,203,33,8,SS_CENTERIMAGE
+    RTEXT           "Vendor",IDC_STATIC,9,113,33,12,SS_CENTERIMAGE
+    RTEXT           "Product",IDC_STATIC,9,125,33,12,SS_CENTERIMAGE
+    RTEXT           "Version",IDC_STATIC,9,137,33,12,SS_CENTERIMAGE
+    GROUPBOX        "Motherboard",IDC_STATIC,7,102,209,51
+    GROUPBOX        "QueryPerformanceFrequency",IDC_STATIC,101,7,115,27
+    LTEXT           "MHz",IDC_STATIC,80,213,15,12,SS_CENTERIMAGE
+    LTEXT           "MHz",IDC_STATIC,138,213,15,12,SS_CENTERIMAGE
+    LTEXT           "MHz",IDC_STATIC,197,213,15,12,SS_CENTERIMAGE
+    LTEXT           "MHz",IDC_STATIC,198,17,15,12,SS_CENTERIMAGE
+END
+
+IDD_CHIPSET_INFO DIALOG DISCARDABLE  0, 0, 274, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chipset Information"
+FONT 9, "MS UI Gothic"
+BEGIN
+    GROUPBOX        "Chipset",IDC_STATIC,7,7,260,106
+    CTEXT           "Static",IDC_CHIPSET,13,19,248,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    GROUPBOX        "North Bridge / Host Bridge / MCH",IDC_STATIC,13,36,248,
+                    34
+    CTEXT           "Static",IDC_NORTH_BRIDGE,80,50,177,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    GROUPBOX        "South Bridge / ICH ( ISA ... IDE ... LPC )",IDC_STATIC,
+                    13,73,248,34
+    CTEXT           "Static",IDC_SOUTH_BRIDGE,80,87,177,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    GROUPBOX        "Video Chip",IDC_STATIC,13,117,248,34
+    CTEXT           "Static",IDC_VIDEO_CHIP,80,131,177,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_NORTH_BRIDGE_ID,18,50,61,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_SOUTH_BRIDGE_ID,18,87,61,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Static",IDC_VIDEO_CHIP_ID,18,131,61,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_DUMMY DIALOG DISCARDABLE  0, 0, 115, 29
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Dummy Dialog"
+FONT 9, "MS UI Gothic"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,58,7,50,14
+END
+
+IDD_CRYSTAL_N_QUIET DIALOG DISCARDABLE  0, 0, 315, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Multiplier Management Setting"
+FONT 9, "MS UI Gothic"
+BEGIN
+    COMBOBOX        IDC_CQ_MAX_FID,48,24,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MID_FID,48,38,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MIN_FID,48,52,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MAX_VID,100,24,50,281,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MID_VID,100,38,50,281,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MIN_VID,100,52,50,281,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Enable Voltage",IDC_CQ_ENABLE_VOLTAGE,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,100,67,51,14
+    COMBOBOX        IDC_CQ_MAX_INTERVAL_TIME,152,24,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MID_INTERVAL_TIME,152,38,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MIN_INTERVAL_TIME,152,52,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MID_THRESHOLD_UP,204,38,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MIN_THRESHOLD_UP,204,52,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MAX_THRESHOLD_DOWN,256,24,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CQ_MID_THRESHOLD_DOWN,256,38,50,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Min -> Mid -> Max",IDC_CQ_MODE_UP_TYPE_0,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,157,94,70,10
+    CONTROL         "Min/Mid -> Max",IDC_CQ_MODE_UP_TYPE_1,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,157,112,70,10
+    CONTROL         "Max -> Mid -> Min",IDC_CQ_MODE_DOWN_TYPE_0,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,236,94,70,10
+    CONTROL         "Max/Mid -> Min",IDC_CQ_MODE_DOWN_TYPE_1,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,236,112,70,10
+    RTEXT           "Maximum",IDC_STATIC,8,26,36,8
+    CTEXT           "Multiplier (FID)",IDC_STATIC,48,13,50,8
+    CTEXT           "Voltage (VID)",IDC_STATIC,100,13,50,8
+    RTEXT           "Minimum",IDC_STATIC,10,54,36,8
+    RTEXT           "Middle",IDC_STATIC,8,40,36,8
+    CTEXT           "Interval Time",IDC_STATIC,152,14,50,8
+    CTEXT           "Up Threshold",IDC_STATIC,204,14,50,8
+    CTEXT           "Down Threshold",IDC_STATIC,256,14,50,8
+    GROUPBOX        "Up",IDC_STATIC,154,79,76,49
+    GROUPBOX        "Down",IDC_STATIC,233,79,76,49
+    PUSHBUTTON      "OK",IDOK,221,159,43,14
+    PUSHBUTTON      "Apply",IDC_CQ_APPLY,221,145,87,14
+    PUSHBUTTON      "Cancel",IDCANCEL,265,159,43,14
+    GROUPBOX        "Option",IDC_STATIC,7,79,142,65
+    COMBOBOX        IDC_CQ_EXIT_MODE,95,100,47,131,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Exit Mode",IDC_STATIC,57,103,36,8
+    COMBOBOX        IDC_CQ_WAIT_TIME,95,114,47,131,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Wait Time",IDC_STATIC,57,117,36,8
+    LTEXT           " (CPU1) Change FID/VID -> Wait Time -> Change VID/FID\r\n   Dual Wait Time\r\n (CPU2) Change FID/VID -> Wait Time -> Change VID/FID",
+                    IDC_STATIC,7,147,212,26,SS_SUNKEN
+    COMBOBOX        IDC_CQ_DUAL_WAIT_TIME,95,128,47,131,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Dual Wait Time",IDC_STATIC,46,131,47,8
+    COMBOBOX        IDC_CQ_TRIGER_TYPE,95,86,47,131,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Switch Trigger",IDC_STATIC,40,90,53,8
+END
+
+IDD_MSR_EDIT DIALOG DISCARDABLE  0, 0, 171, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MSR Editor [AT YOUR OWN RISK!!]"
+FONT 9, "MS UI Gothic"
+BEGIN
+    EDITTEXT        IDC_ACCESS_MSR,53,22,55,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "RDMSR",IDC_RDMSR,7,47,41,14
+    EDITTEXT        IDC_RDMSR_EDX,53,48,55,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_RDMSR_EAX,109,48,55,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "WRMSR",IDC_WRMSR,7,61,41,14
+    EDITTEXT        IDC_WRMSR_EDX,53,62,55,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_WRMSR_EAX,109,62,55,12,ES_RIGHT | ES_AUTOHSCROLL
+    CTEXT           "EAX (31-0)",IDC_STATIC,109,37,55,8
+    CTEXT           "EDX (63-32)",IDC_STATIC,53,37,55,8
+    LTEXT           "MSR Number",IDC_STATIC,7,22,42,12,SS_CENTERIMAGE
+    CTEXT           "AT YOUR OWN RISK!!",IDC_STATIC,7,7,157,11,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Please input hexadecimal(HEX) style.",IDC_STATIC,7,76,
+                    157,11,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_MSR_WALKER DIALOG DISCARDABLE  0, 0, 187, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MSR Walker"
+FONT 9, "Courier New"
+BEGIN
+    EDITTEXT        IDC_MSR_START,42,7,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MSR_END,130,7,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MSR_RESULT,7,24,173,67,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "START",IDC_MSR_SEARCH,7,93,29,14
+    PUSHBUTTON      "STOP",IDC_MSR_STOP,37,93,29,14,WS_DISABLED
+    CTEXT           "",IDC_MSR_TIME,138,93,42,14,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Start",IDC_STATIC,11,7,25,12,SS_CENTERIMAGE
+    RTEXT           "End",IDC_STATIC,100,7,26,12,SS_CENTERIMAGE
+    CONTROL         "Update Result",IDC_MSR_UPDATE_RESULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,71,93,67,14
+END
+
+IDD_SPEED_STEP DIALOG DISCARDABLE  0, 0, 131, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Intel Enhanced SpeedStep"
+FONT 9, "MS UI Gothic"
+BEGIN
+    DEFPUSHBUTTON   "Create Shortcut on Desktop",IDC_SS_CREATE_LINK,23,134,
+                    101,14
+    COMBOBOX        IDC_SS_SET_FID,72,7,46,281,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Current",-1,13,24,34,8
+    LTEXT           "Max",-1,82,24,34,8
+    RTEXT           "Static",IDC_SS_CURRENT_FID,13,34,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_SS_MAX_FID,83,34,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "New Multiplier",-1,12,9,55,8
+    LTEXT           "Max",-1,84,80,30,8
+    RTEXT           "Static",IDC_SS_CURRENT_VID,11,90,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_SS_MAX_VID,85,90,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "AT YOUR OWN RISK!!",-1,7,124,117,8
+    LTEXT           "Current",-1,12,80,30,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_SS_SET_VID,72,64,46,281,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "New Voltage",-1,12,66,55,8
+    GROUPBOX        "",-1,7,57,117,49
+    CONTROL         "Enable Change Voltage",IDC_SS_ENABLE_VOLTAGE,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,49,89,13
+    PUSHBUTTON      "?",IDC_SS_HELP,7,134,14,14
+    CONTROL         "Show Confirmed Dialog",IDC_SS_CONFIRMED_DIALOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,110,92,10
+    RTEXT           "Static",IDC_SS_MIN_VID,48,90,34,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Min",-1,49,80,30,8,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_PCI_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_CUSTOMIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 214
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 336
+    END
+
+    IDD_CPUID_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_FEATURE_DIALOG, DIALOG
+    BEGIN
+        VERTGUIDE, 117
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_LOVE_HAMMER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_BIOS_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_TRANSMETA_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_PROCESSOR_SERIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 19
+    END
+
+    IDD_LONG_HAUL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_CACHE_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_DMI_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_CHIPSET_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_DUMMY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 22
+    END
+
+    IDD_CRYSTAL_N_QUIET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_MSR_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_MSR_WALKER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 93
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_SPEED_STEP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英語 (ｱﾒﾘｶ) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CrystalCPUID.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "afxres.rc"         // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

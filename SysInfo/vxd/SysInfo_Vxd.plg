@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: SysInfo_Vxd - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\miyazaki\LOCALS~1\Temp\RSP122.bat" を作成し、次の内容を記録します
+[
+@echo off
+ml -coff -DBLD_COFF -DIS_32 -W2 -c -Cx -Zm -DMASM6 -IC:\DDK\inc\win_me  -Fo.\Debug\Ctrl.obj Ctrl.asm
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\miyazaki\LOCALS~1\Temp\RSP122.bat" の作成中
+一時ﾌｧｲﾙ "C:\DOCUME~1\miyazaki\LOCALS~1\Temp\RSP123.tmp" を作成し、次の内容を記録します
+[
+/MLd /I ".\\" /I "C:\DDK\inc\win_me" /D "IS_32" /Fo"Debug/" -Zdp -Gs /c 
+"D:\HotProject\SysInfo\vxd\Pcidbg95.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\miyazaki\LOCALS~1\Temp\RSP123.tmp" 
+ｶｽﾀﾑ ﾋﾞﾙﾄﾞ ｽﾃｯﾌﾟを実行中 -  .\Ctrl.asm
+'ml' は、内部コマンドまたは外部コマンド、
+操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+c:\windows\system32\cmd.exe の実行ｴﾗｰ
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+
+
+
+<h3>結果</h3>
+SysInfo.vxd - ｴﾗｰ 1、警告 0
+</pre>
+</body>
+</html>

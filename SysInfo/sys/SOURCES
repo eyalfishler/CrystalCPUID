@@ -1,0 +1,11 @@
+# The sources for pcidebug
+
+#TARGETNAME=SysInfoX64
+TARGETNAME=SysInfo
+
+TARGETPATH=lib
+TARGETTYPE=DRIVER
+
+INCLUDES=..\
+
+SOURCES=pcidebug.c
